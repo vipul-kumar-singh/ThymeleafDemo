@@ -43,4 +43,13 @@ public class EmployeeController {
 
         return "list-employees";
     }
+
+    @GetMapping("/list/bootstrap")
+    public String listEmployeesBootstrap(Model model){
+
+        // add to the spring model
+        model.addAttribute("employees", employeeList);
+
+        return "list-employees-bootstrap";
+    }
 }
