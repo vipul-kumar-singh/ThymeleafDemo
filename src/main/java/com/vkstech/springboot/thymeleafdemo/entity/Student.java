@@ -26,7 +26,9 @@ public class Student {
 	
 	@Column(name="email")
 	private String email;
-	
+
+	@Column(name="image")
+	private String imageUrl;
 		
 	// define constructors
 	
@@ -81,7 +83,14 @@ public class Student {
 	public String toString() {
 		return "Student [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + "]";
 	}
-		
+
+	public String getImageUrl() {
+		return imageUrl;
+	}
+
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
+	}
 }
 
 

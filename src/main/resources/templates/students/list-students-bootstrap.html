@@ -28,6 +28,7 @@
             <th>First Name</th>
             <th>Last Name</th>
             <th>Email</th>
+            <th>Profile Image</th>
         </tr>
         </thead>
         <tbody>
@@ -35,9 +36,13 @@
             <td th:text="${tempStudent.firstName}"></td>
             <td th:text="${tempStudent.lastName}"></td>
             <td th:text="${tempStudent.email}"></td>
+            <td th:align="center">
+                <img th:src="${(tempStudent.imageUrl != null && !#strings.isEmpty(tempStudent.imageUrl)) ? tempStudent.imageUrl : '/img/default-user.png'}" th:height="40" th:width="40"/>
+            </td>
         </tr>
         </tbody>
     </table>
+
 </div>
 </body>
 </html>
