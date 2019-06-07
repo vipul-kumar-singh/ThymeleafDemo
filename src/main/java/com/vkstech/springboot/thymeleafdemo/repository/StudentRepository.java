@@ -1,4 +1,4 @@
-package com.vkstech.springboot.thymeleafdemo.dao;
+package com.vkstech.springboot.thymeleafdemo.repository;
 
 import com.vkstech.springboot.thymeleafdemo.entity.Student;
 import org.springframework.data.jpa.repository.JpaRepository;

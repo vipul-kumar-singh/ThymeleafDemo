@@ -1,6 +1,6 @@
 package com.vkstech.springboot.thymeleafdemo.service;
 
-import com.vkstech.springboot.thymeleafdemo.dao.StudentRepository;
+import com.vkstech.springboot.thymeleafdemo.repository.StudentRepository;
 import com.vkstech.springboot.thymeleafdemo.entity.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
